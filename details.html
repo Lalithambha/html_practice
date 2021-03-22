@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>User Form</title>
+
+</head>
+
+<body>
+
+<center>
+
+<h1>User form</h1>
+
+<form name ="UserForm">
+
+<label for="TofU">Type of User</label>
+
+<select name = "formid" onchange="form1()">
+
+<option value="0" selected disabled></option>
+
+<option value="Employer">Employer</option>
+
+<option value="Employee">Employee</option>
+
+<option value="Contractor">Contractor</option>
+
+</select>
+
+<!--<button type="submit">Submit</button>-->
+
+</form>
+
+<label id="F1"></label>
+
+</center>
+
+<center>
+
+</br>
+
+<button type="button" onclick="document.getElementById('myDIV').style.display='block'">Confirm</button>
+
+</br>
+
+</center>
+
+<script>
+
+function form1()
+
+{
+
+document.getElementById("F1").innerHTML=("The User is "+UserForm.formid[UserForm.formid.selectedIndex].text);
+
+}
+
+</script>
+
+ 
+
+<style>
+
+#myDIV{
+
+display:none;
+
+}
+
+</style>
+
+<div id="myDIV">
+
+</script>
+
+<label> Firstname </label>      
+
+<input type="text" name="firstname" size="15"/> <br> <br>
+
+<label> Middlename: </label>  
+
+<input type="text" name="middlename" size="15"/> <br> <br>
+
+<label> Lastname: </label>      
+
+<input type="text" name="lastname" size="15"/> <br>
+
+<!--<input type="button" value="submit"></input>-->
+
+</div>
+
+<!--<button type="button" onclick="document.getElementById('myDIV').style.'block'">Submit</button>-->
+
+ 
+
+</body>
+
+</html>
+
+
